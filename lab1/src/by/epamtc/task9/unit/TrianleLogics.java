@@ -1,11 +1,24 @@
 package by.epamtc.task9.unit;
 
+import by.epamtc.scanner.DataScanner;
+
 public class TrianleLogics {
-    public static double lengthOfCircle(double radius) {
-        return 2 * 3.14 * radius;
+    public static double calculateLengthOfCircle(double radius) {
+        double pi = java.lang.Math.PI;
+        return 2 * pi * radius;
     }
 
-    public static double squareOfCircle(double radius) {
-        return radius * radius * 3.14;
+    public static double calculateSquareOfCircle(double radius) {
+        double pi = java.lang.Math.PI;
+        return radius * radius * pi;
+    }
+
+    public static double inputRadious() {
+        double radius;
+        do {
+            radius = DataScanner.enterDoubleFromConsole();
+        } while (radius <= 0);
+
+        return radius;
     }
 }

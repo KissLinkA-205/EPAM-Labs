@@ -1,15 +1,11 @@
 package by.epamtc.task6.run;
 
-import by.epamtc.scanner.DataScanner;
-
 public class Runner {
-    public static void main(String... args) {
+    public static void main(String[] args) {
 
         int enteredSeconds;
-        do {
-            System.out.print("Введите секунды: ");
-            enteredSeconds = DataScanner.enterIntFromConsole();
-        } while (enteredSeconds < 0);
+        System.out.print("Введите секунды: ");
+        enteredSeconds = by.epamtc.task6.unit.TrianleLogics.inputSeconds();
 
         int hours = 0, minuts = 0, seconds = 0;
         hours = by.epamtc.task6.unit.TrianleLogics.convertToHours(enteredSeconds);
