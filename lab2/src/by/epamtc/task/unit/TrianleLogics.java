@@ -13,6 +13,14 @@ public class TrianleLogics {
         return weight;
     }
 
+    public static int  inputNumberOfBalls() {
+        int number;
+        do {
+            number = by.epamtc.scanner.DataScanner.enterIntFromConsole();
+        } while (number <= 0);
+        return number;
+    }
+
     public static Colour inputColour() {
         int key;
         do {

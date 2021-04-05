@@ -9,7 +9,7 @@ public class Runner {
         int ballsNumber;
         Basket basket;
         System.out.println("Сколько шариков будет в корзине?");
-        ballsNumber = by.epamtc.scanner.DataScanner.enterIntFromConsole();
+        ballsNumber = by.epamtc.task.unit.TrianleLogics.inputNumberOfBalls();
         System.out.println("Ввод карзины:");
         basket = by.epamtc.task.unit.TrianleLogics.inputBasket(ballsNumber);
         System.out.println("Полученная корзина:");
