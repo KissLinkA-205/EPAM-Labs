@@ -1,6 +1,8 @@
 package by.epamtc.task2.run;
 
 import by.epamtc.scanner.DataScanner;
+import by.epamtc.task2.unit.InputLogics;
+import by.epamtc.task2.unit.MonthLogics;
 
 public class Runner {
     public static void main(String[] args) {
@@ -8,10 +10,10 @@ public class Runner {
         System.out.print("Введите год: ");
         year = DataScanner.enterIntFromConsole();
         System.out.print("Введите номер месяца: ");
-        month = by.epamtc.task2.unit.TrianleLogics.inputMonth();
+        month = InputLogics.inputMonth();
 
         int days;
-        days = by.epamtc.task2.unit.TrianleLogics.discoverNumberOfDays(year, month);
+        days = MonthLogics.discoverNumberOfDays(year, month);
         System.out.print("Количество дней: " + days);
     }
 }

@@ -1,6 +1,7 @@
 package by.epamtc.task4.run;
 
 import by.epamtc.scanner.DataScanner;
+import by.epamtc.task4.unit.ParityLogics;
 
 public class Runner {
     public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class Runner {
         System.out.print("Введите число D: ");
         D = DataScanner.enterIntFromConsole();
 
-        boolean result = by.epamtc.task4.unit.TrianleLogics.isParity(A, B, C, D);
+        boolean result = ParityLogics.isParity(A, B, C, D);
         System.out.print(result);
     }
 }

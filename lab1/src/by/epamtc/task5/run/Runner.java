@@ -1,6 +1,7 @@
 package by.epamtc.task5.run;
 
 import by.epamtc.scanner.DataScanner;
+import by.epamtc.task5.unit.NumberLogics;
 
 public class Runner {
     public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class Runner {
         number = DataScanner.enterIntFromConsole();
 
         boolean result;
-        result = by.epamtc.task5.unit.TrianleLogics.isPerfect(number);
+        result = NumberLogics.isPerfect(number);
         System.out.print(result);
     }
 }

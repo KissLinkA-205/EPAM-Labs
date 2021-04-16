@@ -1,6 +1,8 @@
 package by.epamtc.task10.run;
 
 import by.epamtc.scanner.DataScanner;
+import by.epamtc.task10.unit.FunctionLogics;
+import by.epamtc.task10.unit.InputLogics;
 
 public class Runner {
     public static void main(String[] args) {
@@ -12,9 +14,9 @@ public class Runner {
         b = DataScanner.enterDoubleFromConsole();
 
         System.out.print("Введите шаг: ");
-        h = by.epamtc.task10.unit.TrianleLogics.inputStep();
+        h = InputLogics.inputStep();
 
-        by.epamtc.task10.unit.TrianleLogics.calculateFunction(a, b, h);
+        FunctionLogics.calculateFunction(a, b, h);
     }
 
     public static void printFunction(double x, double result) {

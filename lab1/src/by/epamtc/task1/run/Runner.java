@@ -1,6 +1,8 @@
 package by.epamtc.task1.run;
 
 import by.epamtc.scanner.DataScanner;
+import by.epamtc.task1.unit.CalculationLogics;
+import by.epamtc.task1.unit.FindLogics;
 
 public class Runner {
     public static void main(String[] args) {
@@ -9,10 +11,10 @@ public class Runner {
         number = DataScanner.enterIntFromConsole();
         
         int digit;
-        digit = by.epamtc.task1.unit.TrianleLogics.findLastDigit(number);
+        digit = FindLogics.findLastDigit(number);
 
-        number = by.epamtc.task1.unit.TrianleLogics.calculateSquare(digit);
-        digit = by.epamtc.task1.unit.TrianleLogics.findLastDigit(number);
+        number = CalculationLogics.calculateSquare(digit);
+        digit = FindLogics.findLastDigit(number);
         System.out.println("Последняя цифра квадрата числа: " + digit);
     }
 }

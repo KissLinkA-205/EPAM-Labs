@@ -1,6 +1,7 @@
 package by.epamtc.task8.run;
 
 import by.epamtc.scanner.DataScanner;
+import by.epamtc.task8.unit.FunctionLogics;
 
 public class Runner {
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class Runner {
         x = DataScanner.enterDoubleFromConsole();
 
         double result;
-        result = by.epamtc.task8.unit.TrianleLogics.defineFunction(x);
+        result = FunctionLogics.defineFunction(x);
         System.out.print("Результат вычисления значения функции: " + result);
     }
 }
