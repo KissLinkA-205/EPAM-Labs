@@ -46,7 +46,7 @@ public class IntegerArray {
 
     @Override
     public String toString() {
-        StringBuilder stringBuilder = new StringBuilder(getClass().getName() + "{ " +
+        StringBuilder stringBuilder = new StringBuilder(getClass().getSimpleName() + "{ " +
                 "values=[");
         for (int i = 0; i < this.values.length; i++) {
             stringBuilder.append(values[i]);

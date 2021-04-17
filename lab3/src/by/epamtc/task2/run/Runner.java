@@ -9,7 +9,7 @@ import by.epamtc.task2.service.SortJaggedArray;
 import java.util.Arrays;
 
 public class Runner {
-    public void main(String[] args) throws EmptyArrayException {
+    public static void main(String[] args) throws EmptyArrayException {
         int[][] jaggedArray = {{0, -1, 3}, {99, 325, -32, -4, 6}, {-54, -12, 12, 7}, {1, 2}};
         System.out.println("Исходный массив: ");
         System.out.println(Arrays.deepToString(jaggedArray));

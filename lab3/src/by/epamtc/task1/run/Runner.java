@@ -9,7 +9,7 @@ import by.epamtc.task1.logic.SortArray;
 import java.util.Arrays;
 
 public class Runner {
-    public void main(String[] args) throws EmptyArrayException {
+    public static void main(String[] args) throws EmptyArrayException {
         int[] mas = {0, -3, -2, 1, 7, 3, 2, -5, -4, 8, 9, 6, 10, 4, -1, 5, 321};
         IntegerArray array = new IntegerArray(mas);
         FindingSpecialArrayNumbers specialArrayNumbers = new FindingSpecialArrayNumbers();
