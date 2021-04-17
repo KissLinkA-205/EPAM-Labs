@@ -3,7 +3,7 @@ package by.epamtc.task2.unit;
 import by.epamtc.scanner.DataScanner;
 
 public class InputLogics {
-    public static int inputMonth() {
+    public int inputMonth() {
         int month;
         do {
             month = DataScanner.enterIntFromConsole();

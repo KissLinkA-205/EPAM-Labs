@@ -5,6 +5,7 @@ import by.epamtc.task4.unit.ParityLogics;
 
 public class Runner {
     public static void main(String[] args) {
+        ParityLogics parityAction = new ParityLogics();
 
         int A, B, C, D;
         System.out.print("Введите число A: ");
@@ -19,7 +20,7 @@ public class Runner {
         System.out.print("Введите число D: ");
         D = DataScanner.enterIntFromConsole();
 
-        boolean result = ParityLogics.isParity(A, B, C, D);
+        boolean result = parityAction.isParity(A, B, C, D);
         System.out.print(result);
     }
 }

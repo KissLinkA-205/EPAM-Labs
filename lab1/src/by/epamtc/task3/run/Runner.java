@@ -1,27 +1,29 @@
 package by.epamtc.task3.run;
 
-import by.epamtc.task3.unit.CalculateLogics;
+import by.epamtc.task3.unit.CalculationLogics;
 import by.epamtc.task3.unit.InputLogics;
 
 public class Runner {
     public static void main(String[] args) {
+        InputLogics input = new InputLogics();
+        CalculationLogics calculate = new CalculationLogics();
 
         double square1;
         System.out.print("Введите площать исходного квадрата: ");
-        square1 = InputLogics.inputSquare();
+        square1 = input.inputSquare();
 
         double diagonal;
-        diagonal = CalculateLogics.calculateSideOfSquare(square1);
+        diagonal = calculate.calculateSideOfSquare(square1);
 
         double side;
-        side = CalculateLogics.calculateSideAcrossDiagonal(diagonal);
+        side = calculate.calculateSideAcrossDiagonal(diagonal);
 
         double square2;
-        square2 = CalculateLogics.calculateSquare(side);
+        square2 = calculate.calculateSquare(side);
         System.out.printf("Площать полученного квадрата: %.3f", square2);
 
         double attitude;
-        attitude = CalculateLogics.calculateSquareAttitude(square1, square2);
+        attitude = calculate.calculateSquareAttitude(square1, square2);
         System.out.printf("\nОтношение площадей: %.3f", attitude);
     }
 }

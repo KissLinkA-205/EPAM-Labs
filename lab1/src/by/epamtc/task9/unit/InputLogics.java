@@ -3,7 +3,7 @@ package by.epamtc.task9.unit;
 import by.epamtc.scanner.DataScanner;
 
 public class InputLogics {
-    public static double inputRadius() {
+    public double inputRadius() {
         double radius;
         do {
             radius = DataScanner.enterDoubleFromConsole();

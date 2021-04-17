@@ -3,7 +3,7 @@ package by.epamtc.task10.unit;
 import by.epamtc.scanner.DataScanner;
 
 public class InputLogics {
-    public static double inputStep() {
+    public double inputStep() {
         double h;
         do {
             h = DataScanner.enterDoubleFromConsole();

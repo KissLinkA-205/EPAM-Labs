@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class DataScanner {
 
-    @SuppressWarnings("resource")
     public static double enterDoubleFromConsole() {
         Scanner sc = new Scanner(System.in);
         double a = 0.0;

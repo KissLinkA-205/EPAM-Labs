@@ -3,7 +3,7 @@ package by.epamtc.task6.unit;
 import by.epamtc.scanner.DataScanner;
 
 public class InputLogics {
-    public static int inputSeconds() {
+    public int inputSeconds() {
         int seconds;
         do {
             seconds = DataScanner.enterIntFromConsole();

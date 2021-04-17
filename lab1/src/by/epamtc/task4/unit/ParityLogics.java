@@ -1,7 +1,7 @@
 package by.epamtc.task4.unit;
 
 public class ParityLogics {
-    public static boolean isParity(int numberA, int numberB, int numberC, int numberD) {
+    public boolean isParity(int numberA, int numberB, int numberC, int numberD) {
         int counter = 0;
         int two = 2;
         if (numberA % two == 0) {

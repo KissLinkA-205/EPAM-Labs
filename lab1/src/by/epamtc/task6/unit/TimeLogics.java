@@ -1,20 +1,20 @@
 package by.epamtc.task6.unit;
 
 public class TimeLogics {
-    public static int convertToHours(int enteredSeconds) {
+    public int convertToHours(int enteredSeconds) {
         return enteredSeconds / 3600;
     }
 
-    public static int convertToMinutes(int enteredSeconds) {
+    public int convertToMinutes(int enteredSeconds) {
         int hours = 0;
-        hours = TimeLogics.convertToHours(enteredSeconds);
+        hours = convertToHours(enteredSeconds);
         return (enteredSeconds - hours * 3600) / 60;
     }
 
-    public static int convertToSeconds(int enteredSeconds) {
+    public int convertToSeconds(int enteredSeconds) {
         int hours = 0, minutes = 0;
-        hours = TimeLogics.convertToHours(enteredSeconds);
-        minutes = TimeLogics.convertToMinutes(enteredSeconds);
+        hours = convertToHours(enteredSeconds);
+        minutes = convertToMinutes(enteredSeconds);
         return enteredSeconds - minutes * 60 - hours * 3600;
     }
 }
