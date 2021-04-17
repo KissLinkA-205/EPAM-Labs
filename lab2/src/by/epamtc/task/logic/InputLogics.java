@@ -7,7 +7,7 @@ public class InputLogics {
     public static double inputWeight() {
         double weight;
         do {
-            weight = by.epamtc.scanner.DataScanner.enterDoubleFromConsole();
+            weight = DataScanner.enterDoubleFromConsole();
         } while (weight < 0);
         return weight;
     }
