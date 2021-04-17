@@ -10,8 +10,6 @@ public class Runner {
     public static void main(String[] args) {
         Basket basket = new Basket();
         System.out.println("Ввод карзины:");
-        double weight;
-        Colour colour;
         System.out.println("Введите параметры 1 шарика");
         Ball ball1 = inputBall();
         System.out.println("Введите параметры 2 шарика");
@@ -26,7 +24,7 @@ public class Runner {
         System.out.println("Полученная корзина:");
         System.out.print(basket);
 
-        weight = BasketLogics.calculateWeight(basket);
+        double weight = BasketLogics.calculateWeight(basket);
         System.out.printf("\nВес всех шариков в корзине: %.3f", weight);
         int count = BasketLogics.countBallsByColour(basket, Colour.BLUE);
         System.out.println("\nКоличество синих шариков в корзине: " + count);
