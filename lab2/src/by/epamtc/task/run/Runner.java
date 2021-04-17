@@ -9,6 +9,8 @@ import by.epamtc.task.logic.InputLogics;
 public class Runner {
     public static void main(String[] args) {
         Basket basket = new Basket();
+        BasketLogics basketAction = new BasketLogics();
+
         System.out.println("Ввод карзины:");
         System.out.println("Введите параметры 1 шарика");
         Ball ball1 = inputBall();
@@ -24,28 +26,30 @@ public class Runner {
         System.out.println("Полученная корзина:");
         System.out.print(basket);
 
-        double weight = BasketLogics.calculateWeight(basket);
+        double weight = basketAction.calculateWeight(basket);
         System.out.printf("\nВес всех шариков в корзине: %.3f", weight);
-        int count = BasketLogics.countBallsByColour(basket, Colour.BLUE);
+        int count = basketAction.countBallsByColour(basket, Colour.BLUE);
         System.out.println("\nКоличество синих шариков в корзине: " + count);
     }
 
     public static Ball inputBall() {
         Ball ball = new Ball();
+        InputLogics input = new InputLogics();
         double weight;
         Colour colour;
         System.out.println("Введите вес шарика: ");
-        weight = InputLogics.inputWeight();
+        weight = input.inputWeight();
         ball.setWeight(weight);
 
-        System.out.println("Введите цвет шарика: " +
-                "\n1 - красный" +
-                "\n2 - оранжевый" +
-                "\n3 - желтый" +
-                "\n4 - зеленый" +
-                "\n5 - синий" +
-                "\n6 - фиолетовый");
-        colour = InputLogics.inputColour();
+        System.out.println("""
+                Введите цвет шарика:\s
+                1 - красный
+                2 - оранжевый
+                3 - желтый
+                4 - зеленый
+                5 - синий
+                6 - фиолетовый""");
+        colour = input.inputColour();
         ball.setColour(colour);
 
         return ball;

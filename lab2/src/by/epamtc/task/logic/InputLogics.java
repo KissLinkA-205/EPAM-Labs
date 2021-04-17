@@ -4,7 +4,7 @@ import by.epamtc.scanner.DataScanner;
 import by.epamtc.task.entity.Colour;
 
 public class InputLogics {
-    public static double inputWeight() {
+    public double inputWeight() {
         double weight;
         do {
             weight = DataScanner.enterDoubleFromConsole();
@@ -12,7 +12,7 @@ public class InputLogics {
         return weight;
     }
 
-    public static Colour inputColour() {
+    public Colour inputColour() {
         int key;
         do {
             key = DataScanner.enterIntFromConsole();
