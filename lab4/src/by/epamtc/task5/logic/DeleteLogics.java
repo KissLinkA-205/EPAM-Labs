@@ -21,8 +21,11 @@ public class DeleteLogics {
                 wordLength++;
             }
             if (wordLength == length && CharLogics.isConsonant(text.charAt(i - 1))) {
-                String left = text.substring(0, i - 1);
-                String right = text.substring(i - 1 + length);
+                int begin = 0;
+                int end = i - 1;
+                String left = text.substring(begin, end);
+                begin = i - 1 + length;
+                String right = text.substring(begin);
                 text = left + right;
 
             } else i += wordLength;
@@ -49,8 +52,12 @@ public class DeleteLogics {
                 wordLength++;
             }
             if (wordLength == length && CharLogics.isConsonant(textByChar[i - 1])) {
-                char[] leftSubstring = CharArrayLogics.subarray(textByChar, 0, i - 2);
-                char[] rightSubstring = CharArrayLogics.subarray(textByChar,i - 1 + length, textByChar.length - 1);
+                int begin = 0;
+                int end = i - 2;
+                char[] leftSubstring = CharArrayLogics.subarray(textByChar, begin, end);
+                begin = i - 1 + length;
+                end = textByChar.length - 1;
+                char[] rightSubstring = CharArrayLogics.subarray(textByChar, begin, end);
                 textByChar = CharArrayLogics.concatenate(leftSubstring, rightSubstring);
             } else i += wordLength;
         }

@@ -4,9 +4,6 @@ import by.epamtc.exeptions.EmptyStringException;
 import by.epamtc.util.CharArrayLogics;
 import by.epamtc.util.CharLogics;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class DeleteLogics {
     public String deleteNonLettersUsingString(String text) throws EmptyStringException {
         if (text == null) throw new EmptyStringException("String is empty");
@@ -16,7 +13,8 @@ public class DeleteLogics {
             boolean isLetter = CharLogics.isLetter(text.charAt(i));
 
             if (!isLetter && text.charAt(i) != ' ') {
-                String workingText = text.substring(0, i);
+                int begin = 0;
+                String workingText = text.substring(begin, i);
                 if (i + 1 < text.length()) {
                     workingText += text.substring(i + 1);
                 }
@@ -37,10 +35,14 @@ public class DeleteLogics {
             boolean isLetter = CharLogics.isLetter(textByChar[i]);
 
             if (!isLetter && textByChar[i] != ' ') {
-                char[] leftSubstring = CharArrayLogics.subarray(textByChar, 0, i - 1);
+                int begin = 0;
+                int end = i - 1;
+                char[] leftSubstring = CharArrayLogics.subarray(textByChar, begin, end);
                 char[] rightSubstring = {};
                 if (i + 1 < textByChar.length) {
-                    rightSubstring = CharArrayLogics.subarray(textByChar, i + 1, textByChar.length - 1);
+                    begin = i + 1;
+                    end = textByChar.length - 1;
+                    rightSubstring = CharArrayLogics.subarray(textByChar, begin, end);
                 }
                 textByChar = CharArrayLogics.concatenate(leftSubstring, rightSubstring);
                 i--;

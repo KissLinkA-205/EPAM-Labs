@@ -14,7 +14,8 @@ public class Runner {
 
         System.out.println("Received text:");
         DeleteLogics deleteConsonantWords = new DeleteLogics();
-        text = deleteConsonantWords.deleteConsonantWordsUsingChars(text, 3);
+        int length = 3;
+        text = deleteConsonantWords.deleteConsonantWordsUsingChars(text, length);
         System.out.println(text);
     }
 }

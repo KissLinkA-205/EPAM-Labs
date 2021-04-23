@@ -21,7 +21,8 @@ public class ReplacementLogics {
                 wordLength++;
             }
             if (wordLength == length) {
-                String left = text.substring(0, i - 1);
+                int begin = 0;
+                String left = text.substring(begin, i - 1);
                 String right = text.substring(i - 1 + length);
                 text = left + substring + right;
             }
@@ -50,8 +51,12 @@ public class ReplacementLogics {
                 wordLength++;
             }
             if (wordLength == length) {
-                char[] leftSubstring = CharArrayLogics.subarray(textByChar, 0, i - 2);
-                char[] rightSubstring = CharArrayLogics.subarray(textByChar,i - 1 + length, textByChar.length - 1);
+                int begin = 0;
+                int end = i - 2;
+                char[] leftSubstring = CharArrayLogics.subarray(textByChar, begin, end);
+                begin = i - 1 + length;
+                end = textByChar.length - 1;
+                char[] rightSubstring = CharArrayLogics.subarray(textByChar, begin, end);
                 textByChar = CharArrayLogics.concatenate(leftSubstring, substringByChars);
                 textByChar = CharArrayLogics.concatenate(textByChar, rightSubstring);
             }

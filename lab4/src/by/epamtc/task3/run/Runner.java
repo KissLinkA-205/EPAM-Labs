@@ -15,7 +15,9 @@ public class Runner {
 
         System.out.println("Received text:");
         ReplacementLogics replaceWords = new ReplacementLogics();
-        text = replaceWords.replaceWordsUsingRegex(text, 3, "Hello world!");
+        int length = 3;
+        String substring = "Hello world!";
+        text = replaceWords.replaceWordsUsingRegex(text, length, substring);
         System.out.println(text);
     }
 }

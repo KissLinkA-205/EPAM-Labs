@@ -15,7 +15,9 @@ public class Runner {
 
         System.out.println("Received text:");
         ReplacementLogics replaceLetters = new ReplacementLogics();
-        text = replaceLetters.replaceLetterUsingString(text, 2, '5');
+        int numberOfLetter = 2;
+        char letter = '5';
+        text = replaceLetters.replaceLetterUsingString(text, numberOfLetter, letter);
         System.out.println(text);
     }
 }

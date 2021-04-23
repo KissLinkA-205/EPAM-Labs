@@ -11,7 +11,8 @@ public class CorrectionLogics {
 
             if (text.charAt(i) == 'P' && text.charAt(i + 1) == 'A'
                     && !CharLogics.isPunctuationMark(text.charAt(i + 2)) && i + 2 != text.length() - 1) {
-                text = text.substring(0, i + 1) + 'O' + text.substring(i + 2);
+                int begin = 0;
+                text = text.substring(begin, i + 1) + 'O' + text.substring(i + 2);
             }
         }
 

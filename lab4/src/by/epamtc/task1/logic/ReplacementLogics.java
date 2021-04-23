@@ -19,7 +19,8 @@ public class ReplacementLogics {
                 wordLength++;
             }
             if (wordLength >= numberOfLetter) {
-                text = text.substring(0, i + numberOfLetter - 2) + letter + text.substring(i + numberOfLetter - 1);
+                int begin = 0;
+                text = text.substring(begin, i + numberOfLetter - 2) + letter + text.substring(i + numberOfLetter - 1);
             }
             i += wordLength;
         }
@@ -58,7 +59,8 @@ public class ReplacementLogics {
         for (String s : words) {
             String word = " ";
             if (word.matches("\\w+") && word.length() >= numberOfLetter) {
-                word = word.substring(0, numberOfLetter - 1) + letter + word.substring(numberOfLetter);
+                int begin = 0;
+                word = word.substring(begin, numberOfLetter - 1) + letter + word.substring(numberOfLetter);
             }
             result.append(word);
         }
