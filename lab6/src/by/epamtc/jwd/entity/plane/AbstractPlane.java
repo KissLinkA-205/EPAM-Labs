@@ -15,8 +15,6 @@ public abstract class AbstractPlane {
         this.id = globalID;
     }
 
-    public abstract double getSpecialParameter();
-
     AbstractPlane() {
     }
 

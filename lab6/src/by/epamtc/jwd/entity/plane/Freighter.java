@@ -21,11 +21,6 @@ public class Freighter extends AbstractPlane {
     }
 
     @Override
-    public double getSpecialParameter() {
-        return  this.carryingCapacity;
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null) return false;

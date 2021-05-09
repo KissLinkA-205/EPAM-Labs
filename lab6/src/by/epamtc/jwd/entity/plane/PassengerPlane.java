@@ -21,11 +21,6 @@ public class PassengerPlane extends AbstractPlane {
     }
 
     @Override
-    public double getSpecialParameter() {
-        return  this.passengerSeats;
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null) return false;
