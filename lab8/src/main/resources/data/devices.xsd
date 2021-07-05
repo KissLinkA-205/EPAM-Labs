@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://www.devices.by/xml"
+        xmlns:tns="https://www.devices.by/xml"
+        elementFormDefault="qualified">
+
+    <element name="devices">
+        <complexType>
+            <sequence>
+                <element name="device" type="tns:device" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="device">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="origin" type="string"/>
+            <element name="price" type="tns:price"/>
+            <element name="type" type="tns:type"/>
+            <element name="critical" type="boolean"/>
+        </sequence>
+        <attribute name="id" type="ID" use="required"/>
+        <attribute name="device-group" type="tns:device-group" use="required"/>
+    </complexType>
+
+    <complexType name="type">
+        <sequence>
+            <element name="peripheral" type="boolean"/>
+            <element name="energy-consumption" type="tns:energy-consumption"/>
+            <element name="cooler" type="boolean"/>
+            <element name="com" type="tns:com"/>
+            <element name="usb" type="tns:usb"/>
+            <element name="lpt" type="tns:lpt"/>
+        </sequence>
+    </complexType>
+
+    <simpleType name="device-group">
+        <restriction base="string">
+            <enumeration value="multimedia-device"/>
+            <enumeration value="input-output-device"/>
+            <enumeration value="video-card"/>
+            <enumeration value="cpu"/>
+            <enumeration value="motherboard"/>
+            <enumeration value="ram"/>
+            <enumeration value="cooling-system"/>
+            <enumeration value="ssd"/>
+            <enumeration value="hdd"/>
+            <enumeration value="case"/>
+            <enumeration value="power-supply"/>
+            <enumeration value="sound-card"/>
+            <enumeration value="network-adapter"/>
+            <enumeration value="optical-drive"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="price">
+        <restriction base="double">
+            <minInclusive value="0"/>
+            <maxInclusive value="1000000"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="energy-consumption">
+        <restriction base="integer">
+            <minInclusive value="0"/>
+            <maxInclusive value="500"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="com">
+        <restriction base="integer">
+            <minInclusive value="0"/>
+            <maxInclusive value="5"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="usb">
+        <restriction base="integer">
+            <minInclusive value="0"/>
+            <maxInclusive value="10"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="lpt">
+        <restriction base="integer">
+            <minInclusive value="0"/>
+            <maxInclusive value="5"/>
+        </restriction>
+    </simpleType>
+
+</schema>
