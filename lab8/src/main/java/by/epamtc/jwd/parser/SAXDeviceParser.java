@@ -1,5 +1,6 @@
 package by.epamtc.jwd.parser;
 
+import by.epamtc.jwd.exeptions.ParserException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.InputSource;
@@ -15,7 +16,7 @@ public class SAXDeviceParser extends AbstractDeviceParser {
     private DeviceHandler deviceHandler;
     private XMLReader reader;
 
-    public SAXDeviceParser() {
+    public SAXDeviceParser() throws ParserException {
         super();
         deviceHandler = new DeviceHandler();
         try {
@@ -23,6 +24,7 @@ public class SAXDeviceParser extends AbstractDeviceParser {
             reader.setContentHandler(deviceHandler);
         } catch (SAXException e) {
             LOGGER.error("Error in SAX Constructor", e);
+            throw new ParserException(e);
         }
     }
 

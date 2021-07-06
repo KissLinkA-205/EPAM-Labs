@@ -25,7 +25,6 @@ public class ValidatorXML {
             Schema schema = factory.newSchema(new File(Objects.requireNonNull(classLoader.getResource(RESOURCE_XSD)).getFile()));
             Validator validator = schema.newValidator();
             validator.validate(new StreamSource(xml));
-            LOGGER.info("Validator xml ok");
         } catch (IOException | SAXException e) {
             LOGGER.error("Validator xml error", e);
             return false;

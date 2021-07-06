@@ -23,7 +23,7 @@ public enum DeviceOption {
         this.option = option;
     }
 
-    public String getGroup() {
+    public String getOption() {
         return this.option;
     }
 }

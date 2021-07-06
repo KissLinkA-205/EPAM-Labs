@@ -26,7 +26,6 @@ public class Servlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             process(request, response);
-            LOGGER.info("We are in doGet");
         } catch (Exception e) {
             LOGGER.error("Something went wrong in GET");
             request.getRequestDispatcher("WEB-INF/view/error.jsp").forward(request, response);
@@ -37,7 +36,6 @@ public class Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             process(request, response);
-            LOGGER.info("We are in doPost");
         } catch (Exception e) {
             LOGGER.error("Something went wrong in POST");
             request.getRequestDispatcher("WEB-INF/view/error.jsp").forward(request, response);
