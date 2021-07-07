@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class SAXDeviceParser extends AbstractDeviceParser {
+
     private static final Logger LOGGER = LogManager.getLogger(SAXDeviceParser.class);
     private DeviceHandler deviceHandler;
     private XMLReader reader;

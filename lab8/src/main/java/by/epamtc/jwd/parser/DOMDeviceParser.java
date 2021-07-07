@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class DOMDeviceParser extends AbstractDeviceParser {
+
     private static final Logger LOGGER = LogManager.getLogger(DOMDeviceParser.class);
     private DocumentBuilder documentBuilder;
 
@@ -60,12 +61,9 @@ public class DOMDeviceParser extends AbstractDeviceParser {
 
     private Device buildDevice(Element deviceElement) {
         Device device = new Device();
-        if (!deviceElement.getAttribute(DeviceOption.ID.getOption()).isEmpty()) {
-            device.setId(deviceElement.getAttribute(DeviceOption.ID.getOption()));
-        }
-        if (!deviceElement.getAttribute(DeviceOption.DEVICE_GROUP.getOption()).isEmpty()) {
-            device.setDeviceGroup(DeviceGroup.fromValue(deviceElement.getAttribute(DeviceOption.DEVICE_GROUP.getOption())));
-        }
+        device.setId(deviceElement.getAttribute(DeviceOption.ID.getOption()));
+        device.setDeviceGroup(DeviceGroup.fromValue(deviceElement.getAttribute(DeviceOption.DEVICE_GROUP.getOption())));
+
         device.setName(getElementTextContent(deviceElement, DeviceOption.NAME.getOption()));
         device.setOrigin(getElementTextContent(deviceElement, DeviceOption.ORIGIN.getOption()));
         device.setPrice(Double.parseDouble(getElementTextContent(deviceElement, DeviceOption.PRICE.getOption())));
