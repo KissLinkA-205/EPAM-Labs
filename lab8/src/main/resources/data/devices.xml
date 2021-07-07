@@ -32,4 +32,216 @@
         </type>
         <critical>true</critical>
     </device>
+    
+    <device id="id3" device-group="multimedia-device">
+        <name>Headphones Apple AirPods Pro MWP22</name>
+        <origin>USA</origin>
+        <price>574.00</price>
+        <type>
+            <peripheral>true</peripheral>
+            <energy-consumption>12</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
+    <device id="id4" device-group="multimedia-device">
+        <name>Acoustics SVEN MC-30</name>
+        <origin>Finland</origin>
+        <price>503.33</price>
+        <type>
+            <peripheral>true</peripheral>
+            <energy-consumption>200</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
+    <device id="id5" device-group="cpu">
+        <name>CPU Intel Core i7-8700</name>
+        <origin>USA</origin>
+        <price>871.83</price>
+        <type>
+            <peripheral>false</peripheral>
+            <energy-consumption>110</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>true</critical>
+    </device>
+
+
+    <device id="id6" device-group="hdd">
+        <name>HDD Toshiba P300 1TB [HDWD110UZSVA]</name>
+        <origin>Japan</origin>
+        <price>97.76</price>
+        <type>
+            <peripheral>false</peripheral>
+            <energy-consumption>6</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>true</critical>
+    </device>
+
+    <device id="id7" device-group="ssd">
+        <name>SSD Samsung 870 Evo 500GB MZ-77E500BW</name>
+        <origin>Korea</origin>
+        <price>185.81</price>
+        <type>
+            <peripheral>false</peripheral>
+            <energy-consumption>2</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
+    <device id="id8" device-group="input-output-device">
+        <name>Computer mouse SmartBuy 612AG Red/Black (SBM-612AG-RK)</name>
+        <origin>China</origin>
+        <price>20.68</price>
+        <type>
+            <peripheral>true</peripheral>
+            <energy-consumption>5</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
+    <device id="id9" device-group="input-output-device">
+        <name>Keyboard HyperX Alloy Origins Core (HyperX Red)</name>
+        <origin>USA</origin>
+        <price>294.90</price>
+        <type>
+            <peripheral>true</peripheral>
+            <energy-consumption>3</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>1</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
+    <device id="id10" device-group="ram">
+        <name>RAM G.Skill Aegis 8GB DDR4 PC4-25600 F4-3200C16S-8GIS</name>
+        <origin>China</origin>
+        <price>129.98</price>
+        <type>
+            <peripheral>false</peripheral>
+            <energy-consumption>1</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>true</critical>
+    </device>
+
+    <device id="id11" device-group="cooling-system">
+        <name>CPU cooler ID-Cooling SE-224-XT ARGB</name>
+        <origin>China</origin>
+        <price>88.53</price>
+        <type>
+            <peripheral>false</peripheral>
+            <energy-consumption>5</energy-consumption>
+            <cooler>true</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
+    <device id="id12" device-group="cooling-system">
+        <name>Thermal paste Arctic MX-4 ACTCP00002B (4 g)</name>
+        <origin>Germany</origin>
+        <price>17.10</price>
+        <type>
+            <peripheral>false</peripheral>
+            <energy-consumption>0</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
+    <device id="id13" device-group="case">
+        <name>Case DeepCool Matrexx 55 Mesh ADD-RGB 4F DP-ATX-MATREXX55-MESH-AR-4F</name>
+        <origin>China</origin>
+        <price>153.73</price>
+        <type>
+            <peripheral>false</peripheral>
+            <energy-consumption>5</energy-consumption>
+            <cooler>true</cooler>
+            <com>0</com>
+            <usb>3</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
+    <device id="id14" device-group="sound-card">
+        <name>Sound card Creative Sound Blaster Audigy Fx (SB1570)</name>
+        <origin>Singapore</origin>
+        <price>120.61</price>
+        <type>
+            <peripheral>true</peripheral>
+            <energy-consumption>4</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
+    <device id="id15" device-group="power-supply">
+        <name>Power supply Chieftec Chieftronic PowerPlay GPU-750FC</name>
+        <origin>Germany</origin>
+        <price>272.48</price>
+        <type>
+            <peripheral>false</peripheral>
+            <energy-consumption>160</energy-consumption>
+            <cooler>true</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>true</critical>
+    </device>
+
+    <device id="id16" device-group="network-adapter">
+        <name>Network adapter TP-Link TG-3468</name>
+        <origin>China</origin>
+        <price>21.77</price>
+        <type>
+            <peripheral>false</peripheral>
+            <energy-consumption>1</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
 </devices>
