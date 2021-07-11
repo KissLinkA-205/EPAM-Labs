@@ -3,7 +3,7 @@ package by.epamtc.jwd;
 import by.epamtc.jwd.exeptions.ParserException;
 import by.epamtc.jwd.parser.AbstractDeviceParser;
 import by.epamtc.jwd.parser.factory.ParserFactory;
-import by.epamtc.jwd.validator.ValidatorXML;
+import by.epamtc.jwd.validation.ValidatorXML;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

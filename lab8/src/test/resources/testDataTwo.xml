@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<devices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="https://www.devices.by/xml"
+         xsi:schemaLocation="https://www.devices.by/xml data/devices.xsd">
+
+    <device id="id3" device-group="multimedia-device">
+        <name>Headphones Apple AirPods Pro MWP22</name>
+        <origin>USA</origin>
+        <price>574.00</price>
+        <type>
+            <peripheral>true</peripheral>
+            <energy-consumption>12</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+
+    <device id="id4" device-group="multimedia-device">
+        <name>Acoustics SVEN MC-30</name>
+        <origin>Finland</origin>
+        <price>503.33</price>
+        <type>
+            <peripheral>true</peripheral>
+            <energy-consumption>200</energy-consumption>
+            <cooler>false</cooler>
+            <com>0</com>
+            <usb>0</usb>
+            <lpt>0</lpt>
+        </type>
+        <critical>false</critical>
+    </device>
+</devices>
